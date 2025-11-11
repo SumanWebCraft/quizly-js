@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <title> Quizly - Daily Quiz To Test Your Javascript knowledge! </title>
+</head>
+
+<body class="bg-[#f3f2ef] min-h-screen flex flex-col items-center justify-center">
+  <main class="w-full max-w-3xl px-4">
+
+    <div class="container flex justify-center items-center bg-[#BADFDB] m-6 p-8 rounded-3xl shadow-xl">
+
+      <section class="quiz  text-white space-y-3">
+        <div class="heading">
+          <p class="title text-4xl text-center font-extrabold tracking-wide drop-shadow-sm"> Quizzly </p>
+          <p class="subtitle text-lg text-center font-medium opacity-90"> Daily Quiz To Test Your Javascript knowledge!
+          </p>
+        </div>
+
+        <div
+          class="result hide bg-slate-300 text-center border border-emerald-100 rounded-2xl shadow-md p-6 mt-6 max-w-md mx-auto">
+          <p class=" score text-lg font-semibold text-gray-800 mb-4"> </p>
+
+          <p class="reload">
+            <button
+              class="bg-[#FFA4A4] hover:bg-[#FFBDBD] text-white font-medium py-2 px-5 rounded-xl shadow-sm transition duration-300"
+              onclick="window.location.reload();">
+               Try Again?
+            </button>
+          </p>
+        </div>
+        <form class="quiz-form">
+
+          <div class="question bg-[#FCF9EA] border border-[#BADFDB] rounded-2xl p-5 shadow-sm my-4">
+            <p
+              class="font-semibold text-gray-500 mb-4 leading-relaxed bg-[#e3d9a7] px-4 py-3 rounded-xl border-l-4 border-[#FFA4A4] shadow-sm">
+              1. Which keyword is used to declare a variable in JavaScript?
+            </p>
+
+            <div class="space-y-2">
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q1" value="A" checked class="accent-indigo-500">
+                <label for="" class="text-gray-700">A. var</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q1" value="B" class="accent-indigo-500">
+                <label for="" class="text-gray-700">B. let</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q1" value="C" class="accent-indigo-500">
+                <label for="" class="text-gray-700"> C. const</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q1" value="D" class="accent-indigo-500">
+                <label for="" class="text-gray-700">D. All of the above</label>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="question bg-[#FCF9EA] border border-[#BADFDB] rounded-2xl p-5 shadow-sm my-4">
+            <p
+              class="font-semibold text-gray-500 mb-4 leading-relaxed bg-[#e3d9a7] px-4 py-3 rounded-xl border-l-4 border-[#FFA4A4] shadow-sm">
+              2. What will typeof null return in JavaScript?
+            </p>
+            <div class="space-y-2">
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q2" value="A" checked class="accent-indigo-500">
+                <label for="" class="text-gray-700">A. ‘null’</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q2" value="B" class="accent-indigo-500">
+                <label for="" class="text-gray-700">B. ‘undefined’</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q2" value="C" class="accent-indigo-500">
+                <label for="" class="text-gray-700"> C. ‘object’</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q2" value="D" class="accent-indigo-500">
+                <label for="" class="text-gray-700">D. ‘number’</label>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="question bg-[#FCF9EA] border border-[#BADFDB] rounded-2xl p-5 shadow-sm my-4">
+            <p
+              class="font-semibold text-gray-500 mb-4 leading-relaxed bg-[#e3d9a7] px-4 py-3 rounded-xl border-l-4 border-[#FFA4A4] shadow-sm">
+              3. Which of the following is NOT a JavaScript data type?
+            </p>
+            <div class="space-y-2">
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q3" value="A" checked class="accent-indigo-500">
+                <label for="" class="text-gray-700">A. Number</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q3 value=" B" class="accent-indigo-500">
+                <label for="" class="text-gray-700">B. Undefined</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q3" value="C" class="accent-indigo-500">
+                <label for="" class="text-gray-700"> C. Float</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q3" value = "D" class="accent-indigo-500">
+                <label for="" class="text-gray-700">C. Float</label>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="question bg-[#FCF9EA] border border-[#BADFDB] rounded-2xl p-5 shadow-sm my-4">
+            <p
+              class="font-semibold text-gray-500 mb-4 leading-relaxed bg-[#e3d9a7] px-4 py-3 rounded-xl border-l-4 border-[#FFA4A4] shadow-sm">
+              4. What does the === operator do? </p>
+            <div class="space-y-2">
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q4" value="A" checked class="accent-indigo-500">
+                <label for="" class="text-gray-700">A. Compares both value and type</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q4" value="B" class="accent-indigo-500">
+                <label for="" class="text-gray-700">B. Compares only value</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q4" value="C" class="accent-indigo-500">
+                <label for="" class="text-gray-700"> C. Assigns a value</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q4" value="D" class="accent-indigo-500">
+                <label for="" class="text-gray-700">D. Checks for inequality</label>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="question bg-[#FCF9EA] border border-[#BADFDB] rounded-2xl p-5 shadow-sm my-4">
+            <p
+              class="font-semibold text-gray-500 mb-4 leading-relaxed bg-[#e3d9a7] px-4 py-3 rounded-xl border-l-4 border-[#FFA4A4] shadow-sm">
+              5. Which method converts JSON data to a JavaScript object? </p>
+            <div class="space-y-2">
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q5" value="A" checked class="accent-indigo-500">
+                <label for="" class="text-gray-700">A. JSON.parse()</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q5" value="B" class="accent-indigo-500">
+                <label for="" class="text-gray-700">B. JSON.stringify()</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q5" value="C" class="accent-indigo-500">
+                <label for="" class="text-gray-700"> C. JSON.toObject()</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q5" value="D" class="accent-indigo-500">
+                <label for="" class="text-gray-700">D. JSON.convert()</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="question bg-[#FCF9EA] border border-[#BADFDB] rounded-2xl p-5 shadow-sm my-4">
+            <p
+              class="font-semibold text-gray-500 mb-4 leading-relaxed bg-[#e3d9a7] px-4 py-3 rounded-xl border-l-4 border-[#FFA4A4] shadow-sm">
+              6. What is the default value of an uninitialized variable in JavaScript? </p>
+            <div class="space-y-2">
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q6" value="A" checked class="accent-indigo-500">
+                <label for="" class="text-gray-700">A. null</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q6" value="B" class="accent-indigo-500">
+                <label for="" class="text-gray-700">B. undefined</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q6" value="C" class="accent-indigo-500">
+                <label for="" class="text-gray-700"> C. 0 </label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q6" value="D" class="accent-indigo-500">
+                <label for="" class="text-gray-700"> D. false </label>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="question bg-[#FCF9EA] border border-[#BADFDB] rounded-2xl p-5 shadow-sm my-4">
+            <p
+              class="font-semibold text-gray-500 mb-4 leading-relaxed bg-[#e3d9a7] px-4 py-3 rounded-xl border-l-4 border-[#FFA4A4] shadow-sm">
+              7. Which symbol is used for comments in JavaScript (single line)? </p>
+            <div class="space-y-2">
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q7" value="A" checked class="accent-indigo-500">
+                <label for="" class="text-gray-700">A. </label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q7" value="B" class="accent-indigo-500">
+                <label for="" class="text-gray-700">B. // comment</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q7" value="C" class="accent-indigo-500">
+                <label for="" class="text-gray-700"> C. * comment *</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q7" value="D" class="accent-indigo-500">
+                <label for="" class="text-gray-700">D. # comment</label>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="question bg-[#FCF9EA] border border-[#BADFDB] rounded-2xl p-5 shadow-sm my-4">
+            <p
+              class="font-semibold text-gray-500 mb-4 leading-relaxed bg-[#e3d9a7] px-4 py-3 rounded-xl border-l-4 border-[#FFA4A4] shadow-sm">
+              8. How do you write “Hello World” in an alert box? </p>
+            <div class="space-y-2">
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q8" value="A" checked class="accent-indigo-500">
+                <label for="" class="text-gray-700">A. msgBox(“Hello World”);</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q8" value="B" class="accent-indigo-500">
+                <label for="" class="text-gray-700">B. alertBox(“Hello World”);</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q8" value="C" class="accent-indigo-500">
+                <label for="" class="text-gray-700"> C. alert(“Hello World”);</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q8" value="D" class="accent-indigo-500">
+                <label for="" class="text-gray-700">D. prompt(“Hello World”); </label>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="question bg-[#FCF9EA] border border-[#BADFDB] rounded-2xl p-5 shadow-sm my-4">
+            <p
+              class="font-semibold text-gray-500 mb-4 leading-relaxed bg-[#e3d9a7] px-4 py-3 rounded-xl border-l-4 border-[#FFA4A4] shadow-sm">
+              9. What will console.log(2 + "2") output? </p>
+            <div class="space-y-2">
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q9" value="A" checked class="accent-indigo-500">
+                <label for="" class="text-gray-700">A. 4</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q9" value="B" class="accent-indigo-500">
+                <label for="" class="text-gray-700">B. 22</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q9" value="C" class="accent-indigo-500">
+                <label for="" class="text-gray-700"> C. NaN</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q9" value="D" class="accent-indigo-500">
+                <label for="" class="text-gray-700">D. Error</label>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="question bg-[#FCF9EA] border border-[#BADFDB] rounded-2xl p-5 shadow-sm my-4">
+            <p
+              class="font-semibold text-gray-500 mb-4 leading-relaxed bg-[#e3d9a7] px-4 py-3 rounded-xl border-l-4 border-[#FFA4A4] shadow-sm">
+              10. Which of the following is used to stop a loop in JavaScript? </p>
+            <div class="space-y-2">
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q10" value="A" checked class="accent-indigo-500">
+                <label for="" class="text-gray-700">A. stop</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q10" value="B" class="accent-indigo-500">
+                <label for="" class="text-gray-700">B. break</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q10" value="C" class="accent-indigo-500">
+                <label for="" class="text-gray-700"> C. return</label>
+              </div>
+
+              <div class="option flex items-center gap-2">
+                <input type="radio" name="q10" value="D" class="accent-indigo-500">
+                <label for="" class="text-gray-700">D. exit</label>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="submit bg-[#E45A92] text-center">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
